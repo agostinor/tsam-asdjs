@@ -16,7 +16,7 @@ function ex_1_R(myarray){
         return 0;
     }
     else{
-        return myarray[0] + ex_2_I(myarray.slice(1));
+        return myarray[0] + ex_1_R(myarray.slice(1));
     }
 }
 
@@ -149,7 +149,7 @@ function ex_6_I(a, b){
 }
 
 //Ricorsivo
-function ex_6_R1(a,b){
+function ex_6_R(a,b){
     newArray = [];
     newArray[0] = ex_6_R2(a,b);
     function ex_6_R2(a, b){
@@ -215,8 +215,22 @@ function ex_9_I(Input){
     return output;
 }
 
-//Ricorsivo
-//Non ho capito come ritornare un array in una funzione ricorsiva
+/*Ricorsivo
+function ex_9_R(Input){
+    newArray = [];
+   // newArray.length = Input.length;
+    //count=Input.length;
+    ex_9_R2(Input, newArray,)
+}
+function ex_9_R2(Input, newArray){
+    if(newArray.length == 0){
+           
+    }
+    else{
+        newArray[0] = Input[newArray.length-1];
+        ex_9_R2(Input, newArray.slice(1))
+    }
+}*/
 
 //Esercizio 10. Dati due interi a, n maggiori di 0, scrivere un algoritmo che crea un lista di n elementi contenenti a.
 
