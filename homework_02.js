@@ -40,13 +40,7 @@ function ex_2_F(n){
     return sumOnlyOdd(n);
 }
 
-function ex_02(n){
-    a=[];
-    for(i = 1; i < n*2; i = i+2){
-        a.push(i);
-    }
-    return a.reduce((x,y) => x*y)
-}
+
 //Esercizio 3. Dato un array di 10 elementi, calcolarne la media
 
 function average(myarray){
